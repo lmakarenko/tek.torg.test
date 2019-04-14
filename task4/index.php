@@ -10,11 +10,11 @@
 namespace Task4;
 
 /**
-* Подключаем файл с классом Task4\treeBuilder
+* Подключаем файл с классом Task4\TreeBuilder
 */
-include 'treeBuilder.php';
+include 'TreeBuilder.php';
 
-use Exception, Task4\treeBuilder;
+use Exception, Task4\TreeBuilder;
 
 /**
 * Функция построения массива строк по заданным параметрам
@@ -26,7 +26,7 @@ function build($nlines = 25, $char = '*')
 {
     echo "Построение дерева : число строк {$nlines}, символ '{$char}'<br><br>";
     try {
-        $treeBuilder = new treeBuilder($nlines, $char);
+        $treeBuilder = new TreeBuilder($nlines, $char);
     } catch (Exception $ex) {
         echo $ex->getMessage(), '<br><br>';
         return false;

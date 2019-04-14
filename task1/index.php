@@ -12,9 +12,9 @@ namespace Task1;
 /**
 * Подключаем файл с классом Task1\strChecker
 */
-include 'strChecker.php';
+include 'StrChecker.php';
 
-use Exception, Task1\strChecker;
+use Exception, Task1\StrChecker;
 
 /**
 * Функция проверки строки на предмет закрытых скобок
@@ -25,7 +25,7 @@ function check_string_brackets($string)
 {
     echo "Проверка строки : {$string}<br>";
     try {
-        $strChecker = new strChecker($string);
+        $strChecker = new StrChecker($string);
     } catch (Exception $ex) {
         echo $ex->getMessage(), '<br><br>';
         return false;
