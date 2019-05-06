@@ -76,7 +76,7 @@ class TreeBuilder
     {
         // Вывод строк массива, начиная с первой строки
         for($nline = 1; $nline <= $this->nlines; ++$nline) {
-            $this->print_row($this->nlines - $nline, $nline*2 - 1);
+            $this->printRow($this->nlines - $nline, $nline*2 - 1);
         }  
     }
     
@@ -86,7 +86,7 @@ class TreeBuilder
      * @param char $char Символ
      * @return void
      */
-    protected function print_row($nspaces, $nchars)
+    protected function printRow($nspaces, $nchars)
     {
         // Вывод пробелов перед символами
         for($i = 0; $i < $nspaces; ++$i) {
